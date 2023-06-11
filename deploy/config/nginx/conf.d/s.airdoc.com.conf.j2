@@ -1,0 +1,21 @@
+server {
+    charset utf-8;
+    index index.php index.html;
+    open_file_cache_valid 30s;
+    open_file_cache_min_uses 1;
+    listen    80;
+    server_name {{EYE_SHORT_DOMAIN}}; 
+
+    rewrite ^/(.*) http://{{EYE_YP_DOMAIN}}/user/report/$1 permanent;
+    client_header_buffer_size 4096;
+
+    access_log /var/log/nginx/short-access.log eye;
+
+    root   /var/www/eye/dist;
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   html;
+    }
+}

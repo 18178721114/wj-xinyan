@@ -1,0 +1,17 @@
+10 23 * * * rm -rf /data/ikang/export/wechat_user_*
+10 23 * * * rm -rf /data/ikang/report_task/pdf/*
+* 7-22 * * * flock -xn /tmp/ikang_monitor_23o.lock -c '/usr/bin/php /var/www/eye/public/script.php YPMonitor'
+* 7-22 * * * flock -xn /tmp/ikang_monitor_3m.lock -c '/usr/bin/php /var/www/eye/public/script.php YPMonitor 3'
+30 18 * * * flock -xn /tmp/ikang_monitor_base.lock -c '/usr/bin/php /var/www/eye/public/script.php YPMonitor base'
+30 12 * * * flock -xn /tmp/ikang_monitor_detail.lock -c '/usr/bin/php /var/www/eye/public/script.php YPMonitor detail'
+* * * * * flock -xn /tmp/ikang_monitor_vvip.lock -c '/usr/bin/php /var/www/eye/public/script.php YPMonitor vvip'
+*/30 12,16,17 * * * flock -xn /tmp/ikang_monitor_D.lock -c '/usr/bin/php /var/www/eye/public/script.php YPMonitor program3'
+*/30 12-20 * * * flock -xn /tmp/ikang_monitor_pdf.lock -c '/usr/bin/php /var/www/eye/public/script.php YPMonitor pdf'
+* 7-22 * * * flock -xn /tmp/ikang_monitor_remain.lock -c '/usr/bin/php /var/www/eye/public/script.php YPMonitor remain'
+*/30 9-20 * * * flock -xn /tmp/ikang_monitor_uuid.lock -c '/usr/bin/php /var/www/eye/public/script.php YPMonitor uuid'
+* 7-21 * * * flock -xn /tmp/ikang_script_monitor_nginx_error.lock -c '/usr/bin/php /var/www/eye/public/script.php ScriptMonitor nginx_error 172.17.170.158'
+1 12,21 * * * flock -xn /tmp/ikang_script_monitor_nginx.lock -c '/usr/bin/php /var/www/eye/public/script.php ScriptMonitor nginx'
+* 7-22 * * * flock -xn /tmp/ikang_script_monitor_php.lock -c '/usr/bin/php /var/www/eye/public/script.php ScriptMonitor php 172.170.158'
+*/2 6-19 * * * flock -xn /tmp/ismo.lock -c '/usr/bin/php /var/www/eye/public/script.php ScriptMonitor'
+0 12 * * * flock -xn /tmp/alarm.lock -c '/usr/bin/php /var/www/eye/public/script.php ExportAlarm'
+0 17 * * * flock -xn /tmp/alarm1.lock -c '/usr/bin/php /var/www/eye/public/script.php ExportAlarm'

@@ -1,0 +1,15 @@
+{
+  "name": "eye-ak",
+  "version": "1.0.0",
+  "description": "API Document： http://192.168.0.17/redmine/projects/airdoc-yanke/wiki/API ----",
+  "main": "index.js",
+  "scripts": {
+    "release:test": "rm config/common_test/config_special.inc.php;rm config/common_test/Redis.class.php;rm -rf config/config;rsync -avz ./* work@172.17.1.150:/var/www/eye/;cd config; ln -s common_test config;cd config;ln -s Redis_pe.class.php Redis.class.php;ln -s config_pe.inc.php config_special.inc.php "
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://172.16.0.2/iKang/eye-ak.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

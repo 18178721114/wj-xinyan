@@ -1,0 +1,128 @@
+动脉硬化/高血压及并发症风险 ______ riziko aterosklerózy
+糖尿病及并发症风险 ______ riziko metabolismu glukózy
+高风险 ______ vysoké riziko
+中高风险 ______ střední až vysoké riziko
+中低风险 ______ nízké až střední riziko
+低风险 ______ nízké riziko
+*从视⽹膜分析⼼⾎管⻛险是⼈⼯智能的前沿技术，国际顶级科学期刊《Nature》⼦刊发表了Airdoc相关研究成果，Airdoc和北⼤医学部承担国家⾃然基⾦课题，共同研发了视⽹膜⼼⾎管⻛险评估模型，获得美国MMAAP医学基⾦。 ______ Analýza kardiovaskulárního rizika ze sítnice je špičková technologie umělé inteligence. Dílčí časopis mezinárodního špičkového vědeckého časopisu "Nature" zveřejnil výsledky výzkumu souvisejícího s Airdoc. Airdoc a lékařské oddělení Pekingské univerzity se ujalo projektu národního přírodního fondu pro společný výzkum a vývoj modelu hodnocení kardiovaskulárního rizika sítnice, který získal americký lékařský fond MMAAP.
+⻛险指数既不代表您患有这些疾病，也不等同于这些疾病的发病率。⻛险指数越⾼意味着身体机能越弱，患病⻛险越⾼，预示您的健康状况需要更多关注。 ______ Index rizika nepředstavuje, že máte tato onemocnění, ani se nerovná výskytu těchto onemocnění. Vyšší index rizika znamená slabší tělesnou funkci a vyšší riziko onemocnění, což naznačuje, že vaše zdraví vyžaduje více pozornosti.
+动脉硬化风险 ______ Riziko vzniku aterosklerózy
+您的动脉硬化风险为低风险，建议继续保持。大数据统计结果显示，低风险人群出现高血压的可能性为0.3% ______ Vaše riziko aterosklerózy je nízké a žádné speciální doporučení není nutné. Pravděpodobnost vzniku hypertenze u osob s nízkým rizikem je 0,3 %
+您的动脉硬化风险为中低风险，建议引起关注。大数据统计结果显示，中低风险人群出现高血压的可能性为8.7% ______ Vaše riziko aterosklerózy je nízké až střední a doporučuje se, abyste se jím zabývali. Pravděpodobnost vzniku hypertenze u osob s nízkým až středním rizikem je 8,7 %
+您的动脉硬化风险为中高风险，建议引起重视。大数据统计结果显示，中高风险人群出现高血压的可能性为19.2% ______ Vaše riziko aterosklerózy je střední až vysoké a doporučuje se ho brát vážně. Pravděpodobnost vzniku hypertenze u osob se středním až vysokým rizikem je 19,2 %
+您的动脉硬化风险为高风险，建议定期监测血压，坚持健康管理。大数据统计结果显示，高风险人群出现高血压的可能性为50.5% ______ Riziko aterosklerózy je u vás vysoké, a proto se doporučuje pravidelně sledovat krevní tlak a dodržovat zdravotní režim. Pravděpodobnost vzniku vysokého krevního tlaku u vysoce rizikové skupiny je 50,5 %
+糖代谢风险 ______ Riziko spojené s metabolismem glukózy
+您的糖代谢风险为低风险，建议继续保持。大数据统计结果显示，低风险人群出现糖尿病的可能性为0.1% ______ Máte nízké riziko abnormálního metabolismu glukózy a doporučuje se udržovat tento stav. Možnost vzniku diabetu u skupin s nízkým rizikem 0,1 %
+您的糖代谢风险为中低风险，建议引起关注。大数据统计结果显示，中低风险人群出现糖尿病的可能性为2.4% ______ Máte nízké až střední riziko abnormálního metabolismu glukózy a doporučuje se situaci sledovat. Možnost vzniku diabetu u skupin s nízkým až středním rizikem 2,4 %
+您的糖代谢风险为中高风险，建议引起重视。大数据统计结果显示，中高风险人群出现糖尿病的可能性为4.1% ______ Máte střední až vysoké riziko abnormálního metabolismu glukózy a doporučuje se věnovat situaci zvýšenou pozornost. Možnost vzniku cukrovky u středně až vysoce rizikových skupin 4,1 %
+您的糖代谢风险为高风险，建议定期监测血糖，坚持健康管理。大数据统计结果显示，高风险人群出现糖尿病的可能性为38.1% ______ Máte vysoké riziko abnormálního metabolismu glukózy a doporučuje se pravidelně sledovat hladinu glukózy v krvi. Možnost vzniku cukrovky u vysoce rizikových skupin 38,1 %
+
+视网膜检查报告 ______ Zpráva o AI Fundus zkoušce
+颞上侧 ______ Časový nadřazený
+颞下侧 ______ Časově podřadný
+鼻上侧 ______ Nosní superior
+鼻下侧 ______ Nosní podřadný
+健康评估报告 ______ Zpráva o hodnocení zdravotních rizik
+体检号 ______ ID
+建议下一次复查时间： ______ Doporučený čas příští kontroly
+由于视网膜照片是通过瞳孔照亮视网膜成像，如果瞳孔过小会超过机器适用范围，从而无法识别。 ______ Vzhledem k tomu, že obraz sítnice je osvětlen zornicí, může se stát, je-li zornice příliš malá, že překročí rozsah zařízení a nebude možné ji rozpoznat.
+可能由于先天生理性瞳孔较小，导致图片成像无法达到识别标准 ______ Obrázek není dostatečně jasný, aby se dal přečíst nebo rozpoznat, což je možné díky vrozené fyziologicky malé zornici
+右眼图片不可读，左眼未发现中度非增殖性（含）以上糖尿病性视网膜病变 ______ Obraz pravého oka nelze identifikovat a na levém oku nebyla nalezena žádná středně závažná neproliferativní ani diabetická retinopatie
+左眼图片不可读，右眼未发现中度非增殖性（含）以上糖尿病性视网膜病变 ______ Obraz levého oka nelze identifikovat a na pravém oku nebyla nalezena žádná středně závažná neproliferativní ani diabetická retinopatie
+可能因为瞳孔过小或眨眼等原因造成视网膜影像无法识别。请联系工作人员重新扫描，请注意按设备提示操作。 ______ Snímky sítnice nemohly být identifikovány a zprávy nebyly generovány kvůli malým zornicím nebo mrkání. Kontaktujte prosím personál, aby provedl snímání znovu a postupujte podle pokynů zařízení.
+可能因为拍照姿势不正确或者眨眼造成视网膜影像未识别。请联系工作人员重新扫描，请注意按设备提示操作。 ______ Hlášení nebyla generována z důvodu nesprávného držení těla nebo mrknutí oka. Kontaktujte prosím personál, aby znovu sítnici nascanoval a postupujte podle pokynů zařízení.
+影像可见屈光介质不清，晶状体颜色加深。 ______ Obrázky ukazují rozostření lámavého média a prohloubení barvy čočky.
+可能因白内障等原因导致图片模糊或部分区域不可见，识别结果仅针对可见区域。 ______ Obraz může být rozmazaný nebo některé oblasti nemusí být viditelné kvůli šedému zákalu a dalším důvodům. Výsledek vyšetření je pouze pro viditelné oblasti.
+可能因小瞳孔等原因导致图片模糊或部分区域不可见，识别结果仅针对可见区域。 ______ Obraz může být rozmazaný nebo některé oblasti nemusí být viditelné z důvodu malé zornice a dalších důvodů. Výsledek vyšetření je pouze pro viditelné oblasti.
+可能因小瞳孔或者白内障等原因导致图片模糊或部分区域不可见，识别结果仅针对可见区域。 ______ Obraz může být rozmazaný nebo některé oblasti nemusí být viditelné kvůli malé zornici nebo šedému zákalu a výsledek vyšetření je pouze pro viditelné oblasti.
+目前情况良好，建议定期复查。 ______ Současná situace je v pořádku a doporučujeme pravidelnou kontrolu.
+可能因小瞳孔或某些原因导致部分照片不可读，识别结果仅针对可读图片。 ______ Některé fotografie nelze identifikovat kvůli mikrokoriím nebo z jiných důvodů a výsledek je platný pouze pro čitelné obrázky.
+可能因白内障或某些原因导致部分照片不可读，识别结果仅针对可读图片。 ______ Některé fotografie nelze identifikovat kvůli šedému zákalu nebo z jiných důvodů a výsledek vyšetření je pouze pro čitelné obrázky.
+鹰瞳医疗视网膜检查报告 ______ Zpráva o zkoušce AI Fundu
+可能因瞳孔较小等原因，导致部分图像不可见，在可辨识范围内未见明显眼底异常。 ______ Kvůli vrozené malé zornici a dalším důvodům nejsou některé snímky viditelné a v rámci rozpoznatelného kruhu nejsou patrné žádné zjevné abnormality fundu.
+可能由于瞳孔较小导致图片成像无法达到识别标准 ______ Zobrazení snímku nemusí splňovat rozpoznávací standard kvůli malé zornici
+如有视⼒下降、眼胀眼痛、视物模糊变形等症状，请及时就诊。 ______ Pokud máte příznaky, jako je ztráta zraku, otok očí a bolest očí, rozmazané vidění a deformace, navštivte včas lékaře.
+参考值：0 ______ Referenční hodnota ：0
+参考值：≥0.67 ______ Referenční hodnota ：≥0,67
+参考值：垂直杯盘比 <0.5，双眼水平和垂直杯盘比相差≤0.2 ______ Referenční hodnota ：Vertikální C/D <0,5. Rozdíl mezi horizontálním a vertikálním C/D（OS a OD） ≤0.2
+参考值：<0.15 ______ Referenční hodnota ：<0,15
+B区视网膜动静脉比（AVR）参考值：≥0.67 ______ Referenční hodnota pro arteriovenózní poměr sítnice (AVR) v zóně B ：≥0,67
+杯盘比值参考值：垂直杯盘比 <0.5，双眼水平和垂直杯盘比相差≤0.2 ______ Referenční hodnota pro C/D ：Vertikální <0,5, rozdíl mezi horizontálním a vertikálním C/D （OS a OD）≤0,2
+豹纹斑平均密度参考值：<0.15 ______ Referenční hodnota pro průměrnou hustotu teselace <0,15
+缺损面积参考值：0 ______ Referenční hodnota pro plochu defektu ：0
+近视相关参数 ______ Parametr související s krátkozrakostí
+弧形斑直径(PD) ______ Průměr obloukové skvrny
+弧形斑直径参考值：≤0.1PD ______ Referenční hodnota pro průměr obloukové skvrny
+
+风险比%s增加%s分 ______ Riziko je o procentních bodů vyšší než %
+风险比%s减少%s分 ______ Riziko je o procentních bodů nižší než %
+风险比%s持平 ______ Riziko se od % nezměnilo
+上次 ______ naposledy
+个月前 ______ před měsíci
+天前 ______ před pár dny
+
+正常（未见明显异常风险） ______ Normální (nebylo pozorováno žádné významné abnormální riziko)
+眼底可见半透明视网膜；动静脉血管比值无明显异常；视杯与视乳头（视盘）比例正常。 ______ Ve fundu je vidět průsvitná sítnice; arteriovenózní vaskulární poměr není významně abnormální; a poměr optické misky optické bradavky (optické ploténky) je normální.
+目前情况良好，建议每年复查一次眼底 ______ Současný stav je v pořádku a doporučuje se jednou ročně zkontrolova fundu
+糖尿病性视网膜病变 ______ diabetická retinopatie
+眼底可见糖网特征性病理改变；如有糖尿病史，提示有糖尿病性视网膜病变可能。 ______ Ve fundu lze pozorovat charakteristické patologické změny cukrové sítě, pokud je v anamnéze diabetes mellitus, což naznačuje možnost diabetické retinopatie.
+建议进一步检查。 ______ Doporučuje se další kontrola.
+糖尿病性视网膜病变（中度非增） ______ Střední neproliferativní diabetická retinopatie
+视网膜内可见微血管瘤、出血或渗出。 ______ Mikroangiomy byly pozorovány v sítnici spolu s krvácením nebo exsudací.
+类似异常 ______ pravděpodobně abnormální
+是糖尿病性视网膜病变的中期发展阶段，可能导致黄斑水肿、视网膜新生血管等致盲病变。 ______ Jde o střední vývojové stadium diabetické retinopatie, které může vést k makulárnímu edému, retinální neovaskularizaci a dalším slepým patologiím.
+建议进一步眼科检查。 ______ Doporučuje se další oftalmologické vyšetření.
+糖尿病性视网膜病变（轻度非增） ______ Mírná neproliferativní diabetická retinopatie
+视网膜可见疑似微血管瘤或微小出血点，部分情况下与点状出血特征相似。 ______ Na sítnici byly pozorovány červené punkbulkovité změny, v některých případech podobné rysům tečkovitého krvácení.
+是由糖尿病引起。这个阶段症状不明显，但是长期发展可能导致黄斑水肿、视网膜新生血管等致盲病变。 ______ Je to způsobeno diabetem mellitem. V této fázi nejsou příznaky zřejmé, ale dlouhodobý vývoj může vést k makulárnímu edému, neovaskularizaci sítnice a dalším slepým patologiím.
+建议定期复查。 ______ Doporučuje se pravidelná kontrola.
+糖尿病性视网膜病变（重度非增） ______ Těžká neproliferativní diabetická retinopatie
+视网膜内可见弥漫性出血或渗出，静脉呈串珠状改变，并伴有微血管异常。 ______ V sítnici bylo pozorováno difuzní krvácení nebo exsudace s mikrovaskulárními abnormalitami.
+糖尿病性视网膜病变（增殖期） ______ Proliferativní diabetická retinopatie
+视网膜内可见弥漫性出血和渗出，伴有增殖膜、视网膜下出血或玻璃体积血。 ______ Byly pozorovány četné krvácivé skvrny, změny žilních perliček nebo mikrovaskulární abnormality s podobnými změnami v neovaskularizaci, proliferační membráně a krvácení do sklivce.
+是糖尿病性视网膜病变的晚期阶段，已严重影响视力，有极高失明可能。 ______ Jedná se o pozdní stadium diabetické retinopatie, která vážně ovlivnila zrak a vedla k velmi vysoké možnosti oslepnutí.
+杯盘比偏大 ______ Abnormální poměr pohár/kotouč
+提示生理性大杯或青光眼可能。表现为视杯、视盘比值偏大等类似改变。 ______ Je naznačena možnost fyziologického pohárku nebo glaukomu, projevujícího se poměrem zrakového pohárku,zrakového disku a dalšími podobnými změnami.
+杯盘比是指视网膜照相最亮的部分与周围浅色部分的比值。杯盘比偏大可能是先天性的，也可能是青光眼的征兆。情绪激动、压抑、过度用眼、暗光线工作等，易引起青光眼。 ______ Poměr pohárku a disku označuje poměr nejjasnější části sítnice k okolním světlým částem. Abnormální poměr pohárku a disku může být vrozený nebo může být známkou glaukomu. Emocionální rozrušení, deprese, nadměrné používání očí, práce v tmavém světle atd. mohou snadno způsobit glaukom.
+如有青光眼家族史、高度近视，或有眼痛、眼胀、虹视等症状，建议进一步眼科检查。否则暂无需就医，可定期复查。 ______ Pokud se v rodinné anamnéze vyskytuje glaukom, vysoká krátkozrakost nebo bolest oka, distenze očí, duhovky a další příznaky, doporučuje se další oční vyšetření. V opačném případě není nutné lékařské ošetření a pouze pravidelné kontroly.
+杯盘比正常。 ______ Normální poměr pohár/kotouč.
+视网膜影像未见微血管瘤、出血点、硬性渗出等糖尿病性视网膜病变表现。 ______ Zobrazení sítnice neprokázalo příznaky diabetické retinopatie, jako je mikrohemangiom, krvácející body, tvrdá exsudace apod.
+未见以上所列特征性改变 ______ Žádné výše uvedené změny charakteristik
+疑似白内障 ______ Podezření na kataraktu
+目前情况良好，建议定期复查。可能因小瞳孔或某些原因导致部分照片不可读，识别结果仅针对可读图片。 ______ Současná situace je dobrá a doporučuje se pravidelná kontrola.Některé fotografie nelze identifikovat kvůli mikrokorii nebo z jiných důvodů a výsledky analýzy se týkají pouze čitelných snímků.
+目前情况良好，建议定期复查。可能因白内障或某些原因导致部分照片不可读，识别结果仅针对可读图片。 ______ Současná situace je dobrá a doporučuje se pravidelná kontrola.Některé fotografie nelze identifikovat z důvodu šedého zákalu nebo z jiných důvodů a výsledky analýzy se týkají pouze čitelných snímků.
+可能因白内障或小瞳孔等原因造成视网膜影像无法识别，请进一步眼科检查。 ______ Zobrazení sítnice nemusí být rozpoznáno z důvodu katarakty nebo mikrokorie, proveďte další oční vyšetření.
+建议定期复查眼底，密切观察是否有视力下降、视物模糊等症状，如有症状请及时就诊。 ______ Doporučuje se pravidelně kontrolovat fundus a pečlivě sledovat, zda se neobjevují příznaky zhoršeného vidění a rozmazaného vidění. Pokud se tyto příznaky objeví, včas navštivte lékaře.
+未见异常表现。可能由于患者自身条件原因造成部分视网膜影像不可读，本次分析结果仅对可识别部分影像。 ______ Nebyly zjištěny žádné abnormální nálezy. Některé snímky sítnice nelze analyzovat z důvodu vlastních podmínek pacienta a výsledky této analýzy identifikují pouze některé snímky.
+可能由于患者自身条件原因造成视网膜影像无法识别，建议临床其它眼科检查。 ______ Zobrazení sítnice nemusí být vzhledem ke stavu pacienta analyzováno a doporučují se další klinická oftalmologická vyšetření.
+患者如有其他主诉症状，请结合临床进一步眼科检查。 ______ Pokud má pacient jiné hlavní potíže, proveďte další klinické oční vyšetření.
+目前暂无需就医治疗，定期复查。 ______ V současné době není potřeba lékařské ošetření,a jen prosím pravidelně kontrolujte.
+如有视力下降、眼胀眼痛、视物模糊变形等症状，请及时就诊。 ______ Pokud máte příznaky, jako je ztráta zraku, otok očí a bolest očí, rozmazané vidění a deformace, navštivte včas lékaře.V opačném případě není dočasně nutná lékařská péče.
+视网膜存在严重病变高风险，视力可能受到严重影响，建议立即到医院眼科就诊。 ______ Sítnice má vysoké riziko závažné patologie a její pevnost může být vážně narušena. Doporučuje se okamžitě navštívit oftalmologa.
+影像未见异常特征表现，定期随访。 ______ Na snímku nebyly pozorovány žádné abnormální rysy a prosím o pravidelnou kontrolu.
+如患者有视力下降、眼胀眼痛、视物模糊变形等其他主诉症状，请结合临床进一步眼科检查。 ______ Pokud má pacient další hlavní příznaky, jako jsou poruchy vidění, distenze a bolest očí, rozmazané vidění a deformace, proveďte další klinické oční vyšetření.
+图片不可读，请重新拍摄。 ______ Obrázek není čitelný, pořiďte jej prosím znovu.
+立即就医 ______ okamžitě vyhledejte lékařskou pomoc
+需要就医 ______ potřebujete lékařské ošetření
+未见明显异常 ______ Žádné zjevné abnormality
+如有症状，需要就医 ______ Pokud máte příznaky, vyhledejte lékařské ošetření
+未发现中度非增殖性（含）以上糖尿病性视网膜病变 ______ Nebyla zjištěna žádná středně těžká neproliferativní diabetická retinopatie
+，建议定期复查 ______ , Doporučuje se pravidelné sledování
+，建议定期复查。 ______ , Doporučuje se pravidelné sledování.
+发现中度非增殖性（含）以上糖尿病性视网膜病变 ______ Zjištěná středně těžká neproliferativní diabetická retinopatie
+，建议及时眼科就诊。 ______ doporučuje se včas navštívit očního lékaře.
+视网膜影像可见黄斑区色泽异常，中心凹反光消失，有锡箔样或玻璃纸样反光 ______ Sítnicové obrazy vykazují abnormální barvu v makule, ztrátu centrálních konkávních reflexů, plechové nebo celofánové reflexy
+视网膜影像未见糖尿病性视网膜病变表现。 ______ Snímky sítnice nevykazují žádné známky diabetické retinopatie.
+未发现糖尿病视网膜病变类似异常 ______ U diabetické retinopatie nebyly zjištěny žádné podobné abnormality
+未发现杯盘比偏大 ______ Nebyl zjištěn žádný velký poměr pohárku k disku
+如有视力下降，建议眼科检查。 ______ Pokud dojde ke ztrátě zraku, doporučuje se oftalmologické vyšetření.
+建议立即眼科检查。 ______ Doporučuje se okamžité oftalmologické vyšetření.
+左眼图片不可读，右眼发现中度非增殖性（含）以上糖尿病性视网膜病变 ______ Obrázky levého oka nelze identifikovat a na pravém oku byly zjištěny mírné neproliferativní výše uvedené diabetické změny sítnice
+右眼图片不可读，左眼发现中度非增殖性（含）以上糖尿病性视网膜病变 ______ Obrázky pravého oka nelze identifikovat a na levém oku byly nalezeny mírné neproliferativní výše uvedené diabetické změny sítnice
+右眼 ______ pravé oko
+左眼 ______ levé oko
+外眼像可见瞳孔区不透明体，晶状体颜色加深，眼底红光反射或不可见。 ______ V okolí zornice jsou viditelné zákaly, barva krystalické čočky je tmavší a odraz červeného světla na fundu je neviditelný.
+未发现糖尿病性视网膜病变 ______ Diabetická retinopatie není zjištěna
+图片不可读 ______ Snímek není čitelný
+视网膜照片是通过瞳孔照亮视网膜成像，如果白内障（晶体混浊）或瞳孔过小会导致成像不清晰从而无法识别，建议眼科检查。 ______ Fotografie sítnice se pořizují osvětlením sítnice přes zornici. V případě je katarakty, nebo pokud je zornice příliš malá, bude obraz nejasný, a proto nebude rozpoznatelný, doporučuje se oční vyšetření.
+视网膜照片是通过瞳孔照亮视网膜成像，如果白内障（晶体混浊）或瞳孔过小会导致成像不清晰从而无法识别。 ______ Sítnicová fotografie je obraz sítnice osvětlený zornicí. V případě katarakty, nebo pokud je zornice příliš malá, obraz není jasný, a proto jej nelze rozpoznat.

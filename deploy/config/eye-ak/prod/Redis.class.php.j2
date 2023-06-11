@@ -1,0 +1,12 @@
+<?php
+namespace Air\Config\Config;
+
+class Redis extends \Phplib\Config {
+
+	public function __construct() {
+		$this->servers = array(
+			array('host' => '{{REDIS_SERVER1}}', 'port' => '{{REDIS_SERVER1_PORT}}', 'password' => '{{REDIS_SERVER1_PASSWD}}'),
+			array('host' => '{{REDIS_SERVER2}}', 'port' => '{{REDIS_SERVER2_PORT}}', 'password' => '{{REDIS_SERVER2_PASSWD}}'),
+		);
+	}
+}

@@ -1,0 +1,29 @@
+## ikang
+| camera_profile          |
+| check_disease_map       |
+| check_image_map         |
+| check_info              |
+| check_info_extra        |
+| check_reid_11           |
+| city                    |
+| disease                 |
+| image                   |
+| image_algorithm         |
+| organizer               |
+| patient                 |
+| patient_code            |
+| province                |
+| smb_sn_pcode            |
+| user                    |
+
+## 主产品
+| check_disease_map        |
+| check_image_map          |
+| check_info               |
+| check_info_extra         |
+| check_info_extra_glg     |
+| disease                  |
+| image                    |
+| organizer                |
+| patient                  |
+| user                     |

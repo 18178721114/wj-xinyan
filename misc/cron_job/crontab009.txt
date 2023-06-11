@@ -1,0 +1,47 @@
+10 23 * * * rm -rf /data/ikang/export/wechat_user_*
+10 23 * * * rm -rf /data/ikang/pdf_medical/*
+10 23 * * * rm -rf /data/ikang/report_task/pdf/*
+#保存数据到yt_check_info
+#* * * * * flock -xn /tmp/cretae_yt_check_info1.lock -c '/usr/bin/php /var/www/eye/public/script.php Kafka\\CreateYtCheckInfoStatistics 1'
+#* * * * * flock -xn /tmp/cretae_yt_check_info2.lock -c '/usr/bin/php /var/www/eye/public/script.php Kafka\\CreateYtCheckInfoStatistics 2'
+#2 1 * * * flock -xn /tmp/cretae_yt_check_info.lock -c '/usr/bin/php /var/www/eye/public/script.php CreateYtCheckInfoStatistics'
+
+
+#鹰瞳医疗生成pdf脚本完整版
+* * * * * flock -xn /tmp/medical_pdf_file1.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 1'
+* * * * * flock -xn /tmp/medical_pdf_file2.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 2'
+* * * * * flock -xn /tmp/medical_pdf_file3.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 1'
+* * * * * flock -xn /tmp/medical_pdf_file4.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 2'
+* * * * * flock -xn /tmp/medical_pdf_file5.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 1'
+* * * * * flock -xn /tmp/medical_pdf_file6.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 2'
+* * * * * flock -xn /tmp/medical_pdf_file7.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 1'
+* * * * * flock -xn /tmp/medical_pdf_file8.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 2'
+* * * * * flock -xn /tmp/medical_pdf_file9.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 1'
+* * * * * flock -xn /tmp/medical_pdf_file10.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 2'
+* 7-17 * * * flock -xn /tmp/medical_pdf_file11.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 1'
+* 7-17 * * * flock -xn /tmp/medical_pdf_file12.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 2'
+* 7-17 * * * flock -xn /tmp/medical_pdf_file13.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 1'
+* 7-17 * * * flock -xn /tmp/medical_pdf_file14.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 2'
+
+
+
+#鹰瞳医疗简版
+* * * * * flock -xn /tmp/medical_pdf_simple_file1.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 1'
+* * * * * flock -xn /tmp/medical_pdf_simple_file2.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 2'
+* * * * * flock -xn /tmp/medical_pdf_simple_file3.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 1'
+* * * * * flock -xn /tmp/medical_pdf_simple_file4.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 2'
+* * * * * flock -xn /tmp/medical_pdf_simple_file5.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 1'
+* * * * * flock -xn /tmp/medical_pdf_simple_file6.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 2'
+* * * * * flock -xn /tmp/medical_pdf_simple_file7.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 1'
+* * * * * flock -xn /tmp/medical_pdf_simple_file8.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 2'
+* 7-17 * * * flock -xn /tmp/medical_pdf_simple_file9.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 1'
+* 7-17 * * * flock -xn /tmp/medical_pdf_simple_file10.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 2'
+* 7-17 * * * flock -xn /tmp/medical_pdf_simple_file11.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 1'
+* 7-17 * * * flock -xn /tmp/medical_pdf_simple_file12.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 2'
+
+* * * * * flock -xn /tmp/icvd_pdf0.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfByAgent 24 18'
+* * * * * flock -xn /tmp/icvd_pdf1.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfByAgent 24 19'
+* * * * * flock -xn /tmp/icvd_pdf2.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfByAgent 24 20'
+* * * * * flock -xn /tmp/icvd_pdf3.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfByAgent 24 21'
+* * * * * flock -xn /tmp/icvd_pdf4.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfByAgent 24 22'
+* * * * * flock -xn /tmp/icvd_pdf5.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfByAgent 24 23'

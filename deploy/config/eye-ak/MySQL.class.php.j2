@@ -1,0 +1,16 @@
+<?php
+namespace Air\Config\Config;
+
+class MySQL extends \Air\Libs\Base\Config {
+
+    protected function __construct() {
+        $this->ophthalmology = $this->_ophthalmology();
+    }
+
+    private function _ophthalmology() {
+        $config = array();
+        $config['MASTER']       = array('HOST' => '{{MYSQL_MASTER_HOST}}', 'PORT' => '{{MYSQL_MASTER_PORT}}', 'USER' => '{{MYSQL_RW_USER}}', 'PASS' => '{{MYSQL_RW_PASSWORD}}', 'DB' => '{{MYSQL_DB}}');
+        $config['SLAVES'][0]    = array('HOST' => '{{MYSQL_SLAVE_HOST}}', 'PORT' => '{{MYSQL_SLAVE_PORT}}', 'USER' => '{{MYSQL_R_USER}}', 'PASS' => '{{MYSQL_R_PASSWORD}}', 'DB' => '{{MYSQL_DB}}');
+        return $config;
+    }
+}

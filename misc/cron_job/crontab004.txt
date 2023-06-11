@@ -1,0 +1,209 @@
+10 23 * * * rm -rf /data/ikang/export/wechat_user_*
+10 23 * * * rm -rf /data/ikang/pdf_medical/*
+* 7-21 * * * flock -xn /tmp/ikang_script_monitor_php.lock -c '/usr/bin/php /var/www/eye/public/script.php ScriptMonitor php 172.17.170.106'
+* 7-21 * * * flock -xn /tmp/ikang_script_monitor_nginx_error.lock -c '/usr/bin/php /var/www/eye/public/script.php ScriptMonitor nginx_error 172.17.170.106'
+#切换到调度算法
+#* * * * * flock -xn /tmp/detection_algo1.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 0'
+#* * * * * flock -xn /tmp/detection_algo2.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 1'
+#* * * * * flock -xn /tmp/detection_algo3.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 2'
+#* * * * * flock -xn /tmp/detection_algo4.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 3'
+#* * * * * flock -xn /tmp/detection_algo5.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 4'
+#* * * * * flock -xn /tmp/detection_algo6.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 5'
+#* * * * * flock -xn /tmp/detection_algo7.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 6'
+#* * * * * flock -xn /tmp/detection_algo8.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 7'
+#* 8-17 * * * flock -xn /tmp/detection_algo11.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 10'
+#* 8-17 * * * flock -xn /tmp/detection_algo12.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 11'
+#* 8-17 * * * flock -xn /tmp/detection_algo13.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 12'
+#* 8-17 * * * flock -xn /tmp/detection_algo14.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 13'
+#* 8-17 * * * flock -xn /tmp/detection_algo15.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 14'
+#* 8-17 * * * flock -xn /tmp/detection_algo16.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 15'
+#* 8-17 * * * flock -xn /tmp/detection_algo17.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 16'
+#* 8-17 * * * flock -xn /tmp/detection_algo18.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo 17'
+# 女娲
+* * * * * flock -xn /tmp/detection_algo_glg_1.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo glg 1'
+* * * * * flock -xn /tmp/detection_algo_glg_2.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo glg 2'
+* * * * * flock -xn /tmp/detection_algo_glg_3.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo glg 3'
+* * * * * flock -xn /tmp/detection_algo_glg_4.lock -c '/usr/bin/php /var/www/eye/public/script.php DetectionAlgo glg 4'
+
+* * * * * flock -xn /tmp/ikang_pdf_task1.lock -c '/usr/bin/php /var/www/eye/public/script.php MakePrintPdfTask >> /var/log/airlog/MakePrintPdfTask.log'
+* * * * * flock -xn /tmp/ikang_pdf_task2.lock -c '/usr/bin/php /var/www/eye/public/script.php MakePrintPdfTask >> /var/log/airlog/MakePrintPdfTask.log'
+* * * * * flock -xn /tmp/MakePrintPdfEmail01.lock -c '/usr/bin/php /var/www/eye/public/script.php MakePrintPdfTask email >> /var/log/airlog/MakePrintPdfTask.log'
+* * * * * flock -xn /tmp/ikang_generate_pdf_11.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_pdf'
+* * * * * flock -xn /tmp/ikang_generate_pdf_12.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_pdf'
+* * * * * flock -xn /tmp/ikang_generate_pdf_13.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_pdf'
+* * * * * flock -xn /tmp/ikang_generate_pdf_14.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_pdf'
+* * * * * flock -xn /tmp/ikang_generate_pdf_15.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_pdf'
+* * * * * flock -xn /tmp/ikang_generate_pdf_16.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_pdf'
+* * * * * flock -xn /tmp/ikang_generate_pdf_17.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_pdf'
+* * * * * flock -xn /tmp/ikang_generate_pdf_18.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_pdf'
+* * * * * flock -xn /tmp/ikang_generate_pdf_19.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_pdf'
+* * * * * flock -xn /tmp/ikang_generate_pdf_20.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_pdf'
+* * * * * flock -xn /tmp/ikang_generate_pdf_31.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_pdf_simple'
+* * * * * flock -xn /tmp/ikang_generate_pdf_32.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_pdf_simple'
+* * * * * flock -xn /tmp/ikang_generate_pdf_33.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_pdf_simple'
+* * * * * flock -xn /tmp/ikang_generate_zip.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf generate_zip'
+* * * * * flock -xn /tmp/ikang_upload_zip1.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf upload_zip'
+* * * * * flock -xn /tmp/ikang_upload_zip2.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf upload_zip'
+* * * * * flock -xn /tmp/ikang_upload_zip3.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf upload_zip'
+* * * * * flock -xn /tmp/ikang_upload_zip4.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf upload_zip'
+* * * * * flock -xn /tmp/ikang_upload_zip5.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf upload_zip'
+* * * * * flock -xn /tmp/ikang_upload_zip11.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf upload_zip'
+* * * * * flock -xn /tmp/ikang_upload_zip12.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf upload_zip'
+* * * * * flock -xn /tmp/ikang_upload_zip13.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf upload_zip'
+* * * * * flock -xn /tmp/ikang_upload_zip14.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf upload_zip'
+* * * * * flock -xn /tmp/ikang_upload_zip15.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf upload_zip'
+2,8 0 * * * flock -xn /tmp/sat_fetch_award.lock -c '/usr/bin/php /var/www/eye/public/script.php Sat\\FetchAward'
+* * * * * flock -xn /tmp/all_check_1.lock -c '/usr/bin/php /var/www/eye/public/script.php GetAllcheckList 1'
+* * * * * flock -xn /tmp/all_check_2.lock -c '/usr/bin/php /var/www/eye/public/script.php GetAllcheckList 2'
+#* 21-23,0-5 * * * flock -xn /tmp/adelete.lock -c '/usr/bin/php /var/www/eye/public/script.php Oss\\OssImageClearForAliyun'
+0 23 * * * flock -xn /tmp/oversea_oss_tmp_delete.lock -c '/usr/bin/php /var/www/eye/public/script.php Oss\\OssImageClearForAliyunForOversea'
+0 13 * * * flock -xn /tmp/sat_diary_data.lock -c '/usr/bin/php /var/www/eye/public/script.php Sat\\ExportSatDiary'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40403_01.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40403 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40403_02.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40403 2'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40456_31.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40456 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40456_32.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40456 2'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40456_33.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40456 3'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40679_32.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40679 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40679_33.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40679 2'
+* * * * * flock -xn /tmp/ikang_generate_pdf_41023_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41023 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_41023_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41023 2'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40761_01.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40761 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40761_02.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40761 2'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40340_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40340 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40340_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40340 2'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40967_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40967 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40967_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40967 2'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40999_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40999 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40999_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40999 2'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40479_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40479 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40479_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40479 2'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40794_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40794 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_40794_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40794 2'
+* * * * * flock -xn /tmp/ikang_generate_pdf_41026_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41026 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_41026_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41026 2'
+* * * * * flock -xn /tmp/ikang_generate_pdf_41666_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41666 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_41666_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41666 2'
+* * * * * flock -xn /tmp/ikang_40680_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40680 1'
+* * * * * flock -xn /tmp/ikang_40680_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40680 2'
+* * * * * flock -xn /tmp/taibao1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40338 1'
+* * * * * flock -xn /tmp/taibao2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40338 2'
+* * * * * flock -xn /tmp/taikang1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40337 1'
+* * * * * flock -xn /tmp/taikang2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40337 2'
+* * * * * flock -xn /tmp/taikang6.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40337 2'
+* * * * * flock -xn /tmp/taikangzy1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40410 1'
+* * * * * flock -xn /tmp/taikangzy2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40410 2'
+* * * * * flock -xn /tmp/zhongying_generate_pdf_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40404 1'
+* * * * * flock -xn /tmp/zhongying_generate_pdf_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40404 2'
+* * * * * flock -xn /tmp/zhongying_generate_pdf_3.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42208 1'
+* * * * * flock -xn /tmp/zhongying_generate_pdf_4.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42208 2'
+* * * * * flock -xn /tmp/baobei_40363_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40413 1'
+* * * * * flock -xn /tmp/baobei_40363_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40413 2'
+* * * * * flock -xn /tmp/ikang_generate_gaoji_01.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40166 1'
+* * * * * flock -xn /tmp/ikang_generate_gaoji_02.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40166 2'
+* * * * * flock -xn /tmp/ikang_generate_huitai_03.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40722 1'
+* * * * * flock -xn /tmp/ikang_generate_huatai_04.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40722 2'
+* * * * * flock -xn /tmp/ikang_yuanmeng01.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41113 1'
+* * * * * flock -xn /tmp/ikang_yuanmeng02.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41113 2'
+* * * * * flock -xn /tmp/ikang_yuanmeng_43182_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 43182 1'
+* * * * * flock -xn /tmp/ikang_yuanmeng_43182_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 43182 2'
+* * * * * flock -xn /tmp/ikang_41080_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41080 1'
+* * * * * flock -xn /tmp/ikang_41080_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41080 2'
+* * * * * flock -xn /tmp/ikang_41242_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41242 1'
+* * * * * flock -xn /tmp/ikang_41242_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41242 2'
+* * * * * flock -xn /tmp/ikang_41410_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41410 1'
+* * * * * flock -xn /tmp/ikang_41410_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41410 2'
+* * * * * flock -xn /tmp/ikang_41665_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41665 1'
+* * * * * flock -xn /tmp/ikang_41665_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41665 2'
+* * * * * flock -xn /tmp/ikang_41445_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41445 1'
+* * * * * flock -xn /tmp/ikang_41445_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41445 2'
+* * * * * flock -xn /tmp/ikang_41699_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41699 1'
+* * * * * flock -xn /tmp/ikang_41699_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41699 2'
+* * * * * flock -xn /tmp/ikang_41731_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41731 1'
+* * * * * flock -xn /tmp/ikang_41731_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41731 2'
+* * * * * flock -xn /tmp/ikang_generate_pdf_41204_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41204 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_41204_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41204 2'
+* * * * * flock -xn /tmp/ikang_41757_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41757 1'
+* * * * * flock -xn /tmp/ikang_41757_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41757 2'
+* * * * * flock -xn /tmp/ikang_40635_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40635 1'
+* * * * * flock -xn /tmp/ikang_40635_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40635 2'
+* * * * * flock -xn /tmp/ikang_42057_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42057 1'
+* * * * * flock -xn /tmp/ikang_42057_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42057 2'
+#厦门
+* * * * * flock -xn /tmp/ikang_40786_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40786 1'
+* * * * * flock -xn /tmp/ikang_40786_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40786 2'
+#天瑞淄博
+* * * * * flock -xn /tmp/pg_40226_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40226 2'
+* * * * * flock -xn /tmp/pg_40226_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40226 1'
+#天瑞德州
+* * * * * flock -xn /tmp/pg_41779_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41779 2'
+* * * * * flock -xn /tmp/pg_41779_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41779 1'
+
+## 泰康养老鹰瞳健康
+* * * * * flock -xn /tmp/taikangyth1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41954 1'
+* * * * * flock -xn /tmp/taikangyth2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41954 2'
+
+#南方医院
+#* * * * * flock -xn /tmp/ikang_40472_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40472 1'
+#* * * * * flock -xn /tmp/ikang_40472_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40472 2'
+
+#青岛眼科医院(众佑)
+* * * * * flock -xn /tmp/ikang_40512_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40512 1'
+* * * * * flock -xn /tmp/ikang_40512_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 40512 2'
+
+* * * * * flock -xn /tmp/ikang_41908_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41908 1’
+* * * * * flock -xn /tmp/ikang_41908_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41908 2'
+# aier
+* * * * * /usr/bin/php /var/www/eye/public/script.php PushThirdAierReport
+
+# 推送第三方报告 脚本
+* * * * * /usr/bin/php /var/www/eye/public/script.php PushThirdStardReport 1
+* * * * * /usr/bin/php /var/www/eye/public/script.php PushThirdStardReport 2
+* * * * * /usr/bin/php /var/www/eye/public/script.php PushThirdStardReport 3
+* * * * * /usr/bin/php /var/www/eye/public/script.php PushThirdStardReport 4
+* * * * * /usr/bin/php /var/www/eye/public/script.php PushThirdStardReport 5
+* * * * * /usr/bin/php /var/www/eye/public/script.php PushThirdStardReport 6
+
+* * * * * /usr/bin/php /var/www/eye/public/script.php PushThirdStardReport 1 1
+* * * * * /usr/bin/php /var/www/eye/public/script.php PushThirdStardReport 2 1
+* * * * * /usr/bin/php /var/www/eye/public/script.php PushThirdStardReport 3 1
+* * * * * /usr/bin/php /var/www/eye/public/script.php PushThirdStardReport 4 1
+* * * * * /usr/bin/php /var/www/eye/public/script.php PushThirdStardReport 5 1
+* * * * * /usr/bin/php /var/www/eye/public/script.php PushThirdStardReport 6 1
+
+* * * * * flock -xn /tmp/OutsideStatisticTask01.lock -c '/usr/bin/php /var/www/eye/public/script.php OutsideStatisticTask'
+* * * * * flock -xn /tmp/OutsideStatisticTask02.lock -c '/usr/bin/php /var/www/eye/public/script.php OutsideStatisticTask'
+* * * * * flock -xn /tmp/OutsideStatisticTask03.lock -c '/usr/bin/php /var/www/eye/public/script.php OutsideStatisticTask'
+* * * * * flock -xn /tmp/OutsideStatisticTask04.lock -c '/usr/bin/php /var/www/eye/public/script.php OutsideStatisticTask'
+
+
+1 22 * * * flock -xn /tmp/QingdaoDataReader.lock -c '/usr/bin/php /var/www/eye/public/script.php Qingdao\\QingdaoDataReader'
+#春雨职健对接
+* * * * * flock -xn /tmp/ikang_41908_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41908 1’
+* * * * * flock -xn /tmp/ikang_41908_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41908 2'
+
+# 明瞳
+* * * * * flock -xn /tmp/ikang_generate_pdf_42815_001.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42815 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_42815_002.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42815 2'
+* * * * * flock -xn /tmp/ikang_generate_pdf_42815_003.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42815 3'
+* * * * * flock -xn /tmp/ikang_generate_pdf_42815_004.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42815 4'
+* * * * * flock -xn /tmp/ikang_generate_pdf_42815_005.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42815 5'
+* * * * * flock -xn /tmp/ikang_generate_pdf_42815_006.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42815 6'
+
+# 平安好福利
+* * * * * flock -xn /tmp/push_generate_pdf_42226_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42226 1'
+* * * * * flock -xn /tmp/push_generate_pdf_41637_1.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41637 1'
+* * * * * flock -xn /tmp/push_generate_pdf_42226_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42226 2'
+* * * * * flock -xn /tmp/push_generate_pdf_41637_2.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 41637 2'
+
+# PACS大相机
+* * * * * flock -xn /tmp/ikang_generate_pdf_42490_01.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42490 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_42490_02.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42490 2'
+* * * * * flock -xn /tmp/ikang_generate_pdf_42786_01.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42786 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_42786_02.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42786 2'
+# 贵黔
+* * * * * flock -xn /tmp/ikang_generate_pdf_42108_01.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42108 1'
+* * * * * flock -xn /tmp/ikang_generate_pdf_42108_02.lock -c '/usr/bin/php /var/www/eye/public/script.php PushGeneralThirdV2 42108 2'
+
+// 合肥京东方医院
+* * * * * flock -xn /tmp/jingdongfang_1.lock -c '/usr/bin/php /var/www/test-eye/public/script.php Third\\JingDongFang  41470 1'
+* * * * * flock -xn /tmp/jingdongfang_2.lock -c '/usr/bin/php /var/www/test-eye/public/script.php Third\\JingDongFang  41470 2'

@@ -1,0 +1,29 @@
+{
+    "require": {
+        "yohang/finite": "~1.1",
+        "qiniu/php-sdk": "^7.1",
+        "phpoffice/phpspreadsheet": "^1.1",
+        "swiftmailer/swiftmailer": "^6.0",
+        "iio/libmergepdf": "^3.1",
+        "aliyuncs/oss-sdk-php": "^2.3",
+        "chillerlan/php-qrcode": "^2.0.3",
+        "phpseclib/phpseclib": "~2.0",
+        "maennchen/zipstream-php": "^0.5.2",
+        "xingwenge/canal_php": "^1.0",
+        "alibabacloud/iot": "^1.8",
+        "alibabacloud/nlscloudmeta": "^1.8",
+        "alibabacloud/kms": "^1.8",
+        "alibabacloud/ecs": "^1.8",
+        "jsyqw/utils": "^0.2.8",
+        "oygza/aliyun-php-sdk-afs": "^1.0",
+        "alibabacloud/ocr": "^1.8",
+        "alibabacloud/ocr-20191230": "1.0.5",
+        "microsoft/azure-storage-blob": "*",
+        "qcloud/cos-sdk-v5": "^2.5",
+      "ext-json": "*",
+      "ext-curl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    }
+}

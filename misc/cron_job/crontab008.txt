@@ -1,0 +1,36 @@
+10 23 * * * rm -rf /data/ikang/export/wechat_user_*
+10 23 * * * rm -rf /data/ikang/pdf_medical/*
+10 23 * * * rm -rf /data/ikang/report_task/pdf/*
+
+#保存数据到yt_check_info
+#* * * * * flock -xn /tmp/cretae_yt_check_info1.lock -c '/usr/bin/php /var/www/eye/public/script.php Kafka\\CreateYtCheckInfoStatistics 1'
+#* * * * * flock -xn /tmp/cretae_yt_check_info2.lock -c '/usr/bin/php /var/www/eye/public/script.php Kafka\\CreateYtCheckInfoStatistics 2'
+#2 1 * * * flock -xn /tmp/cretae_yt_check_info.lock -c '/usr/bin/php /var/www/eye/public/script.php CreateYtCheckInfoStatistics'
+
+#10 23 * * * rm -rf /data/ikang/export/wechat_user_*
+#* * * * * /usr/bin/php /var/www/eye/public/script.php Kafka\\CreateYtCheckInfoStatistics 1
+#* * * * * /usr/bin/php /var/www/eye/public/script.php Kafka\\CreateYtCheckInfoStatistics 2
+#2 1 * * * /usr/bin/php /var/www/eye/public/script.php CreateYtCheckInfoStatistics
+* * * * * flock -xn /tmp/medical_pdf_file1.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 1'
+#* * * * * flock -xn /tmp/medical_pdf_file2.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 2'
+#* * * * * flock -xn /tmp/medical_pdf_file3.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 1'
+#* * * * * flock -xn /tmp/medical_pdf_file4.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical 2'
+* * * * * flock -xn /tmp/medical_pdf_simple_file1.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 1'
+#* * * * * flock -xn /tmp/medical_pdf_simple_file2.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 2'
+#* * * * * flock -xn /tmp/medical_pdf_simple_file3.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_medical_simple 1'
+#* * * * * flock -xn /tmp/gt_local_pdf_1.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_local 1'
+#* * * * * flock -xn /tmp/gt_local_pdf_2.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_local 2'
+#* * * * * flock -xn /tmp/gt_local_pdf_simple_1.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_local'
+#* * * * * flock -xn /tmp/gt_local_pdf_simple_2.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfMedical generate_pdf_local_simple'
+#0 * * * * flock -xn /tmp/oversea_monitor.lock -c '/usr/bin/php /var/www/eye/public/script.php OverseaMonitor'
+#* * * * * flock -xn /tmp/guiqian_base.lock -c '/usr/bin/php /var/www/eye/public/script.php Third\\GuiqianGetBaseInfo 42108'
+##导医通医疗报告推送
+#* * * * * flock -xn /tmp/daoyitong_push_01.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdf2Partner 1 daoyitong'
+
+
+* * * * * flock -xn /tmp/icvd_pdf0.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfByAgent 24 12'
+* * * * * flock -xn /tmp/icvd_pdf1.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfByAgent 24 13'
+* * * * * flock -xn /tmp/icvd_pdf2.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfByAgent 24 14'
+* * * * * flock -xn /tmp/icvd_pdf3.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfByAgent 24 15'
+* * * * * flock -xn /tmp/icvd_pdf4.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfByAgent 24 16'
+* * * * * flock -xn /tmp/icvd_pdf5.lock -c '/usr/bin/php /var/www/eye/public/script.php UploadPdfByAgent 24 17'

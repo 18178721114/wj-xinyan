@@ -1,0 +1,61 @@
+---
+- hosts: test-webserver
+  remote_user: airdoc
+  become: yes
+  become_user: root
+  tasks:
+    - name: copy the webserver api code
+      copy: src=../../eye-ak.tar.gz dest=/home/airdoc/eye-ak.tar.gz
+    - name: copy the php library code
+      copy: src=../../phplib.tar.gz dest=/home/airdoc/phplib.tar.gz
+    - name: copy the html code
+      copy: src=../../dist.tar.gz dest=/home/airdoc/dist.tar.gz
+    - name: copy the wechat code
+      copy: src=../../wechat-dist.tar.gz dest=/home/airdoc/wechat-dist.tar.gz
+    - name: uncompress the files
+      shell: tar xzvf /home/airdoc/eye-ak.tar.gz
+    - name: uncompress the files
+      shell: tar xzvf /home/airdoc/phplib.tar.gz
+    - name: uncompress the files
+      shell: tar xzvf /home/airdoc/dist.tar.gz
+    - name: uncompress the files
+      shell: tar xzvf /home/airdoc/wechat-dist.tar.gz
+    - name: copy the file into the dest
+      shell: cp -rf /home/airdoc/phplib /var/www
+    - name: copy the file into the dest
+      shell: cp -rf /home/airdoc/eye-ak    /var/www
+    - name: copy the file into the dest
+      shell: cp -rf /home/airdoc/dist    /var/www/eye-ak
+    - name: copy the file into the dest
+      shell: cp -rf /home/airdoc/crm-dist/* /var/www/eye-ak/crm-dist
+    - name: create the link
+      shell: rm -rf /var/www/eye-ak/config/config && ln -sf /var/www/eye-ak/config/test /var/www/eye-ak/config/config
+    - name: copy the mysql template
+      template: src="./config/eye-ak/MySQL.class.php.j2" dest="/var/www/eye-ak/config/test/MySQL.class.php"
+    - name: copy the redis template
+      template: src="./config/eye-ak/Redis.class.php.j2" dest="/var/www/eye-ak/config/test/Redis.class.php"
+    - name: copy the config tempalte
+      template: src="./config/eye-ak/config.inc.php.j2" dest="/var/www/eye-ak/config/test/config.inc.php"
+    - name: remove the default nginx configuration
+      shell: rm -rf /etc/nginx/conf.d/default.conf
+    - name: write the nginx config file
+      template: src="./config/nginx/nginx.conf.j2" dest="/etc/nginx/nginx.conf"
+      notify:
+      - restart nginx
+    - name: write the nginx config file
+      template: src="./config/nginx/conf.d/ak.airdoc.com.conf.j2" dest="/etc/nginx/conf.d/ak.airdoc.com.conf"
+      notify:
+      - restart nginx
+    - name: ensure nginx is running
+      service: name=nginx state=started
+    - name: ensure redis is running
+      service: name=redis state=started
+    - name: ensure php-fpm is running
+      service: name=php-fpm state=started
+    - name: create log directory
+      file: path=/var/log/airlog mode=0755 state=directory owner=apache
+  handlers:
+    - name: restart nginx
+      service: name=nginx state=restarted
+    - name: restart redis
+      service: name=redis state=restarted

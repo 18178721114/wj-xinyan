@@ -1,0 +1,32 @@
+server {
+    charset utf-8;
+    open_file_cache_valid 30s;
+    open_file_cache_min_uses 1;
+    listen    80;
+    listen    443 ssl;
+
+    ssl_certificate /etc/letsencrypt/live/open-api.airdoc.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/open-api.airdoc.com/privkey.pem; # managed by Certbot
+
+    server_name {{EYE_OPEN_API_DOMAIN}};
+    client_header_buffer_size 10240;
+    access_log  /var/log/nginx/open-api-access.log eye;
+    root   /var/www//eye/public;
+
+    location ~ \.php$ {
+        fastcgi_pass   127.0.0.1:9003;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+
+    location / {
+        if (!-e $request_filename) {
+              rewrite ^(.*)$ /index.php last;
+        }
+        fastcgi_pass   127.0.0.1:9003;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+}

@@ -1,0 +1,43 @@
+server {
+    charset utf-8;
+    index index.php index.html;
+    open_file_cache_valid 30s;
+    open_file_cache_min_uses 1;
+    listen    80;
+    server_name {{EYE_WJ_DOMAIN}};
+
+    client_header_buffer_size 4096;
+    access_log  /var/log/nginx/eye-access.log eye;
+
+    root   /var/www/eye/public;
+    location ~ \.php$ {
+        fastcgi_pass   127.0.0.1:9000;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+    location /api {
+        if (!-e $request_filename) {
+              rewrite ^(.*)$ /index.php last;
+        }
+        fastcgi_pass   127.0.0.1:9000;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+
+    location /favicon.ico {
+        root html;
+    }
+
+    location / {
+    	alias /var/www/eye/dist/;
+    }
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   html;
+    }
+}
